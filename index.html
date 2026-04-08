@@ -8,128 +8,89 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #0f172a; }
-        .text-obsidian { color: #0f172a; }
-        .bg-obsidian { background-color: #0f172a; }
-        .border-soft { border: 1px solid rgba(15, 23, 42, 0.08); }
-        
-        /* Premium Gradient for the Hero */
-        .text-gradient { 
-            background: linear-gradient(180deg, #0f172a 0%, #475569 100%); 
-            -webkit-background-clip: text; 
-            -webkit-text-fill-color: transparent; 
-        }
-
-        /* Radio Card Logic: Professional selection styling */
-        .radio-card input:checked + label { 
-            border-color: #0f172a; 
-            background-color: #f8fafc; 
-            box-shadow: 0 0 0 1px #0f172a; 
-        }
-        
-        .glass-nav { 
-            background: rgba(255, 255, 255, 0.8); 
-            backdrop-filter: blur(12px); 
-            -webkit-backdrop-filter: blur(12px); 
-        }
-
-        .animate-in { animation: fadeIn 0.6s ease-out forwards; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .text-gradient { background: linear-gradient(180deg, #0f172a 0%, #475569 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .radio-card input:checked + label { border-color: #0047AB; background-color: #f8fafc; box-shadow: 0 0 0 1px #0047AB; }
+        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .btn-black { background-color: #0f172a; color: white; transition: all 0.2s ease; }
+        .btn-black:hover { background-color: #1e293b; transform: translateY(-1px); }
     </style>
 </head>
-<body class="antialiased selection:bg-blue-100">
+<body class="antialiased">
 
     <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
             <div class="flex items-center space-x-2.5">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                <span class="text-lg font-extrabold tracking-tighter uppercase">Human<span class="text-blue-600">Core</span></span>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0047AB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span class="text-lg font-extrabold tracking-tighter uppercase">Human<span class="text-[#0047AB]">Core</span></span>
             </div>
             <div class="hidden md:flex items-center space-x-10 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500">
-                <a href="#philosophy" class="hover:text-black transition">The Mission</a>
                 <a href="#levels" class="hover:text-black transition">The Standard</a>
                 <a href="manifesto.html" class="hover:text-black transition">Legal Code</a>
-                <a href="#generator" class="bg-obsidian text-white px-6 py-2.5 rounded-full hover:bg-slate-800 transition shadow-lg shadow-slate-200">Certify Work</a>
+                <a href="#generator" class="btn-black px-6 py-2.5 rounded-full">Certify Work</a>
             </div>
         </div>
     </nav>
 
-    <header class="pt-52 pb-32 px-6 bg-[radial-gradient(45%_45%_at_50%_50%,rgba(241,245,249,1)_0%,rgba(255,255,255,1)_100%)]">
+    <header class="pt-52 pb-32 px-6 bg-[radial-gradient(circle_at_center,_#f1f5f9_0%,_#fff_100%)]">
         <div class="max-w-5xl mx-auto text-center">
-            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white border-soft text-[10px] font-bold uppercase tracking-[0.15em] text-slate-500 mb-10 shadow-sm">
-                <span class="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse"></span>
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white border border-slate-100 text-[10px] font-bold uppercase tracking-[0.15em] text-slate-500 mb-10 shadow-sm">
                 <span>Proof of Biological Origin // v1.0</span>
             </div>
-            <h1 class="text-6xl md:text-[5.5rem] font-[800] tracking-tighter mb-8 leading-[0.9] text-gradient">
-                Authenticity in the <br>Synthetic Era.
+            <h1 class="text-6xl md:text-8xl font-[800] tracking-tighter mb-8 text-gradient leading-[0.9]">
+                HUMAN CORE
             </h1>
             <p class="text-xl md:text-2xl text-slate-500 max-w-3xl mx-auto font-light leading-relaxed mb-14">
-                Human Core is the global protocol to certify that a thought, a work, or a piece of information was born from <strong>biological consciousness.</strong>
+                The global benchmark to certify that a work, a thought, or a piece of information was born from <strong>human intentionality.</strong>
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-5">
-                <a href="#generator" class="bg-obsidian text-white px-12 py-5 rounded-2xl font-bold shadow-2xl hover:bg-slate-800 transition-all transform hover:-translate-y-1">Start Certification</a>
-                <a href="manifesto.html" class="bg-white border border-slate-200 px-12 py-5 rounded-2xl font-bold hover:bg-slate-50 transition shadow-sm">Legal Framework</a>
+                <a href="#generator" class="btn-black px-12 py-5 rounded-2xl font-bold shadow-2xl">Start Certification</a>
+                <a href="manifesto.html" class="bg-white border border-slate-200 px-12 py-5 rounded-2xl font-bold hover:bg-slate-50 transition">Legal Protocol</a>
             </div>
         </div>
     </header>
 
-    <section id="philosophy" class="py-32 px-6 border-t border-slate-50">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-[11px] font-black uppercase tracking-[0.4em] text-blue-600 mb-8">The Core Philosophy</h2>
-            <p class="text-3xl md:text-4xl font-semibold tracking-tight leading-tight text-obsidian">
-                "Digital information is becoming a commodity. <span class="text-slate-400 font-light">AI simulates patterns, but it cannot simulate origin. When you see the Human Core badge, you are looking at a guarantee of human accountability."</span>
-            </p>
-        </div>
-    </section>
-
     <section id="levels" class="py-32 bg-slate-50 border-y border-slate-100">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-3 gap-10">
-                <div class="bg-white p-12 rounded-[40px] border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-500 group">
-                    <div class="w-14 h-14 mb-10 text-obsidian transform group-hover:scale-110 transition-transform">
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="bg-white p-12 rounded-[40px] border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-500">
+                    <div class="w-12 h-12 mb-10 text-[#0047AB]">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">HC-Pure</h3>
-                    <p class="text-slate-500 font-light leading-relaxed mb-8">Undiluted Human Origin. Every decision, from the first spark to the final execution, is a product of biological experience.</p>
-                    <div class="flex items-center space-x-2 text-[10px] font-black uppercase tracking-widest text-blue-600">
-                        <span>100% Biological</span>
-                    </div>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed mb-8">100% Biological authorship. No generative AI utilized from ideation to final execution.</p>
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-blue-600">Standard: Pure Origin</div>
                 </div>
 
-                <div class="bg-white p-12 rounded-[40px] border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-500 group">
-                    <div class="w-14 h-14 mb-10 text-obsidian transform group-hover:scale-110 transition-transform">
+                <div class="bg-white p-12 rounded-[40px] border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-500">
+                    <div class="w-12 h-12 mb-10 text-slate-900">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10" stroke-dasharray="3 3"/><path d="M12 8v8M8 12h8"/></svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">HC-Assist</h3>
-                    <p class="text-slate-500 font-light leading-relaxed mb-8">Amplified Human Intent. The core substance is human; technology is used merely as a technical tool to polish the vision.</p>
-                    <div class="flex items-center space-x-2 text-[10px] font-black uppercase tracking-widest text-slate-400">
-                        <span>Human-Led Tech</span>
-                    </div>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed mb-8">Human authored. AI limited to technical polish, noise reduction, or resolution upscaling.</p>
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Standard: Tech Support</div>
                 </div>
 
-                <div class="bg-white p-12 rounded-[40px] border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-500 group">
-                    <div class="w-14 h-14 mb-10 text-obsidian transform group-hover:scale-110 transition-transform">
+                <div class="bg-white p-12 rounded-[40px] border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-500">
+                    <div class="w-12 h-12 mb-10 text-slate-900">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 2a10 10 0 0 1 0 20V12h10a10 10 0 0 1-10-10z" fill="currentColor" fill-opacity="0.1"/></svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">HC-Hybrid</h3>
-                    <p class="text-slate-500 font-light leading-relaxed mb-8">Directed Synthesis. A transparent collaboration where human creative direction gives meaning to synthetic output.</p>
-                    <div class="flex items-center space-x-2 text-[10px] font-black uppercase tracking-widest text-slate-400">
-                        <span>Symbiotic Author</span>
-                    </div>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed mb-8">Co-creation. Human acting as Creative Director with AI-generated core components.</p>
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Standard: Symbiotic</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="generator" class="py-32 px-6 bg-white">
-        <div class="max-w-2xl mx-auto border border-slate-200 p-12 md:p-20 rounded-[60px] shadow-2xl shadow-slate-100">
+    <section id="generator" class="py-32 px-6">
+        <div class="max-w-2xl mx-auto bg-white border border-slate-200 p-12 md:p-20 rounded-[60px] shadow-2xl">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-extrabold mb-3 tracking-tight">Certification Engine</h2>
-                <p class="text-slate-400 font-light">Establish the biological trace of your information.</p>
+                <p class="text-slate-400 font-light">Determine the biological trace of your work.</p>
             </div>
             
             <div class="space-y-16">
                 <div class="radio-card">
-                    <p class="text-[10px] font-black uppercase tracking-[0.3em] text-blue-600 mb-6 text-center">Verification Step 01</p>
                     <p class="text-xl font-semibold text-center mb-8">Did Generative AI create the core idea or substance?</p>
                     <div class="grid grid-cols-2 gap-4">
                         <input type="radio" name="hybrid" id="h_yes" class="hidden" onclick="setFlag('hybrid', true)">
@@ -141,8 +102,7 @@
                 </div>
 
                 <div class="radio-card">
-                    <p class="text-[10px] font-black uppercase tracking-[0.3em] text-blue-600 mb-6 text-center">Verification Step 02</p>
-                    <p class="text-xl font-semibold text-center mb-8">Did you use AI solely for technical polishing?</p>
+                    <p class="text-xl font-semibold text-center mb-8">Did you use AI only for technical polishing?</p>
                     <div class="grid grid-cols-2 gap-4">
                         <input type="radio" name="assist" id="a_yes" class="hidden" onclick="setFlag('assist', true)">
                         <label for="a_yes" class="block py-5 border border-slate-100 rounded-2xl cursor-pointer text-center font-bold text-xs tracking-widest transition-all">YES</label>
@@ -152,18 +112,18 @@
                     </div>
                 </div>
 
-                <button onclick="generateResult()" class="w-full bg-obsidian text-white py-6 rounded-3xl font-bold text-sm tracking-[0.2em] uppercase hover:bg-slate-800 transition-all shadow-xl shadow-slate-200">Seal Certification</button>
+                <button onclick="generateResult()" class="w-full btn-black py-6 rounded-3xl font-bold text-sm tracking-[0.2em] uppercase shadow-xl">Generate Certificate</button>
             </div>
 
-            <div id="result" class="hidden mt-24 pt-16 border-t border-slate-100 text-center animate-in">
-                <div id="res-icon" class="w-24 h-24 mx-auto mb-10 text-obsidian"></div>
+            <div id="result" class="hidden mt-24 pt-16 border-t border-slate-100 text-center">
+                <div id="res-icon" class="w-24 h-24 mx-auto mb-10 text-slate-900"></div>
                 <h3 id="res-level" class="text-4xl font-black mb-6 tracking-tighter uppercase">HC-PURE</h3>
-                <p id="res-desc" class="text-slate-500 mb-12 font-light text-lg">Your work is certified as 100% biological.</p>
+                <p id="res-desc" class="text-slate-500 mb-12 font-light text-lg italic"></p>
                 
                 <div class="flex flex-col gap-4 max-w-sm mx-auto">
-                    <a id="res-download" href="#" download class="bg-obsidian text-white py-4 rounded-xl font-bold text-[11px] uppercase tracking-widest hover:bg-slate-800 transition">Download Badge Asset</a>
+                    <a id="res-download" href="#" download class="btn-black py-4 rounded-xl font-bold text-[11px] uppercase tracking-widest">Download Official Badge</a>
                     <div class="bg-slate-50 p-6 rounded-2xl text-[10px] font-mono text-slate-500 text-left border border-slate-100">
-                        <span class="block text-[8px] font-black text-slate-300 mb-2 uppercase">Legal Metadata Tag</span>
+                        <span class="block text-[8px] font-black text-slate-300 mb-2 uppercase">Metadata Signature</span>
                         <code id="res-code"></code>
                     </div>
                 </div>
@@ -171,12 +131,8 @@
         </div>
     </section>
 
-    <footer class="py-32 border-t border-slate-50 text-center bg-white">
-        <div class="flex items-center justify-center space-x-3 mb-8 opacity-40">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <span class="text-xs font-black uppercase tracking-[0.5em]">Human Core Protocol</span>
-        </div>
-        <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Global Integrity Standard // 2026 // Defending Human Spark</p>
+    <footer class="py-24 border-t border-slate-50 text-center bg-white">
+        <p class="text-[10px] text-slate-400 font-bold uppercase tracking-[0.5em]">Human Core Project // 2026 // The Era of Authenticity</p>
     </footer>
 
     <script>
@@ -194,14 +150,14 @@
 
         function generateResult() {
             if (flags.hybrid === null || flags.assist === null) {
-                alert("Verification parameters incomplete."); return;
+                alert("Please answer all parameters."); return;
             }
 
-            let level = "HC-PURE", iconKey = "pure", file = "hc-pure.png", desc = "100% Biological authorship verified.";
+            let level = "HC-PURE", iconKey = "pure", file = "hc-pure.png", desc = "100% Biological authorship. No generative AI utilized.";
 
             if (flags.hybrid === true) {
                 level = "HC-HYBRID"; iconKey = "hybrid"; file = "hc-hybrid.png";
-                desc = "Human creative direction with synthetic components.";
+                desc = "Human-directed collaboration with AI generated components.";
             } else if (flags.assist === true) {
                 level = "HC-ASSIST"; iconKey = "assist"; file = "hc-assist.png";
                 desc = "Human authored work with technological technical support.";
@@ -210,7 +166,7 @@
             document.getElementById('res-level').innerText = level;
             document.getElementById('res-icon').innerHTML = icons[iconKey];
             document.getElementById('res-desc').innerText = desc;
-            document.getElementById('res-code').innerText = `<meta name="human-core" content="${level}-1.0">`;
+            document.getElementById('res-code').innerText = `<meta name="creative-origin" content="${level}-1.0">`;
             
             const btn = document.getElementById('res-download');
             btn.href = "assets/" + file;
