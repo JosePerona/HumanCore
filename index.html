@@ -18,7 +18,7 @@
                     fontFamily: { sans: ['Poppins', 'sans-serif'], },
                     colors: {
                         hc: {
-                            blue: '#0047AB', // Deep Cobalt
+                            blue: '#0047AB', 
                             dark: '#0A0F1E',
                             cyan: '#00E5FF',
                             slate: '#F1F5F9',
@@ -32,7 +32,6 @@
         }
     </script>
     <style>
-        /* Modern backdrop blur effect */
         .backdrop-blur-glass {
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
@@ -43,7 +42,6 @@
             background-color: #F0F7FF;
             box-shadow: 0 0 0 4px rgba(0, 71, 171, 0.1);
         }
-        /* Result code styling */
         .code-block {
             font-family: monospace;
             background: #1E293B;
@@ -92,64 +90,24 @@
         </div>
     </header>
 
-    <section class="py-24 px-6 bg-slate-50">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-            <div class="space-y-6">
-                <h2 class="text-4xl font-extrabold tracking-tight leading-snug">The right to know the origin of spark.</h2>
-                <p class="text-lg text-slate-600 font-light leading-relaxed">In 2026, the digital world is flooded with generated content. Biological creativity holds unique value. Human Core doesn't ban technology; it empowers creators to be honest about how their work was made, building trust with their audience.</p>
-            </div>
-            <div class="grid grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 space-y-2">
-                    <span class="text-4xl">🧠</span>
-                    <h4 class="font-bold">Human Intention</h4>
-                    <p class="text-sm text-slate-500">Value of experience & emotion.</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 space-y-2">
-                    <span class="text-4xl">🤖</span>
-                    <h4 class="font-bold">AI Assistance</h4>
-                    <p class="text-sm text-slate-500">Tools for technical polish.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="levels" class="py-24 px-6 bg-white border-y border-slate-100">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-4xl font-extrabold text-center mb-16 tracking-tight">The Transparency Tiers</h2>
-            
             <div class="grid lg:grid-cols-3 gap-10">
-                <div class="relative group bg-slate-50 p-10 rounded-3xl border border-slate-200 shadow-sm hover:border-blue-300 hover:shadow-lg transition-all duration-300">
-                    <div class="absolute top-6 right-8 text-6xl font-black text-slate-200 group-hover:text-blue-100 transition">01</div>
+                <div class="relative group bg-slate-50 p-10 rounded-3xl border border-slate-200 shadow-sm hover:border-blue-300 hover:shadow-lg transition">
                     <div class="text-5xl mb-6">🏆</div>
                     <h3 class="text-2xl font-bold mb-3 text-hc-blue">HC-Pure</h3>
-                    <p class="text-slate-600 font-light mb-6">100% Human. Total biological authorship. Zero Generative AI used from ideation to final execution.</p>
-                    <ul class="text-sm text-slate-500 space-y-2 border-t border-slate-200 pt-6">
-                        <li>✅ Human Conception</li>
-                        <li>✅ Human Execution</li>
-                        <li>❌ AI Content Generation</li>
-                    </ul>
+                    <p class="text-slate-600 font-light mb-6">100% Human. Total biological authorship. No AI used.</p>
                 </div>
-                <div class="relative group bg-slate-50 p-10 rounded-3xl border border-slate-200 shadow-sm hover:border-cyan-300 hover:shadow-lg transition-all duration-300">
-                    <div class="absolute top-6 right-8 text-6xl font-black text-slate-200 group-hover:text-cyan-100 transition">02</div>
+                <div class="relative group bg-slate-50 p-10 rounded-3xl border border-slate-200 shadow-sm hover:border-cyan-300 hover:shadow-lg transition">
                     <div class="text-5xl mb-6">⚙️</div>
                     <h3 class="text-2xl font-bold mb-3 text-cyan-700">HC-Assist</h3>
-                    <p class="text-slate-600 font-light mb-6">AI used only for technical polish (grammar, noise reduction, resolution upscaling). You are the creative engine.</p>
-                    <ul class="text-sm text-slate-500 space-y-2 border-t border-slate-200 pt-6">
-                        <li>✅ Human Core Creation</li>
-                        <li>✅ AI Technical Support</li>
-                        <li>❌ AI Conceptual Control</li>
-                    </ul>
+                    <p class="text-slate-600 font-light mb-6">Human engine, AI for technical polish only.</p>
                 </div>
-                <div class="relative group bg-slate-50 p-10 rounded-3xl border border-slate-200 shadow-sm hover:border-slate-400 hover:shadow-lg transition-all duration-300">
-                    <div class="absolute top-6 right-8 text-6xl font-black text-slate-200 group-hover:text-slate-300 transition">03</div>
+                <div class="relative group bg-slate-50 p-10 rounded-3xl border border-slate-200 shadow-sm hover:border-slate-400 hover:shadow-lg transition">
                     <div class="text-5xl mb-6">🧠</div>
                     <h3 class="text-2xl font-bold mb-3 text-slate-800">HC-Hybrid</h3>
-                    <p class="text-slate-600 font-light mb-6">Co-creation. Human acting as Creative Director, with AI generating significant parts of the work.</p>
-                    <ul class="text-sm text-slate-500 space-y-2 border-t border-slate-200 pt-6">
-                        <li>✅ Human Curation</li>
-                        <li>✅ AI Content Generation</li>
-                        <li>✅ Transparency Required</li>
-                    </ul>
+                    <p class="text-slate-600 font-light mb-6">Co-creation. Human curation with AI generation.</p>
                 </div>
             </div>
         </div>
@@ -157,51 +115,46 @@
 
     <section id="generator" class="py-24 px-6 bg-slate-50">
         <div class="max-w-3xl mx-auto bg-white p-10 md:p-16 rounded-[40px] shadow-glass border border-slate-100">
-            <h2 class="text-4xl font-extrabold text-center mb-4 tracking-tight">Certify Your Work</h2>
-            <p class="text-center text-slate-500 text-lg mb-12 font-light">Answer two honest questions to determine your badge.</p>
+            <h2 class="text-4xl font-extrabold text-center mb-12 tracking-tight">Certify Your Work</h2>
             
             <div id="quiz" class="space-y-12">
                 <div>
-                    <label class="block text-xl font-semibold mb-6 text-slate-800">1. Did Generative AI create the core idea, structure, or content of your work?</label>
+                    <label class="block text-xl font-semibold mb-6 text-slate-800">1. Did Generative AI create the core idea or content?</label>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                             <input type="radio" name="q1" id="q1y" value="yes" class="hidden peer" onchange="setStep('hybrid', true)">
-                            <label for="q1y" class="block bg-white p-6 rounded-2xl border-2 border-slate-200 cursor-pointer hover:border-slate-300 transition">
+                            <label for="q1y" class="block bg-white p-6 rounded-2xl border-2 border-slate-200 cursor-pointer hover:border-slate-300 transition text-center">
                                 <span class="font-bold text-lg block">Yes</span>
-                                <span class="text-sm text-slate-500">AI provided significant conceptual output.</span>
                             </label>
                         </div>
                         <div>
                             <input type="radio" name="q1" id="q1n" value="no" class="hidden peer" onchange="setStep('hybrid', false)">
-                            <label for="q1n" class="block bg-white p-6 rounded-2xl border-2 border-slate-200 cursor-pointer hover:border-slate-300 transition">
+                            <label for="q1n" class="block bg-white p-6 rounded-2xl border-2 border-slate-200 cursor-pointer hover:border-slate-300 transition text-center">
                                 <span class="font-bold text-lg block">No</span>
-                                <span class="text-sm text-slate-500">The idea and substance came from a human.</span>
                             </label>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <label class="block text-xl font-semibold mb-6 text-slate-800">2. Did you use AI *only* for technical corrections (spelling, audio cleaning, upscaling)?</label>
+                    <label class="block text-xl font-semibold mb-6 text-slate-800">2. Did you use AI only for technical corrections?</label>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                             <input type="radio" name="q2" id="q2y" value="yes" class="hidden peer" onchange="setStep('assist', true)">
-                            <label for="q2y" class="block bg-white p-6 rounded-2xl border-2 border-slate-200 cursor-pointer hover:border-slate-300 transition">
+                            <label for="q2y" class="block bg-white p-6 rounded-2xl border-2 border-slate-200 cursor-pointer hover:border-slate-300 transition text-center">
                                 <span class="font-bold text-lg block">Yes</span>
-                                <span class="text-sm text-slate-500">AI was a tool, not a creator.</span>
                             </label>
                         </div>
                         <div>
                             <input type="radio" name="q2" id="q2n" value="no" class="hidden peer" onchange="setStep('assist', false)">
-                            <label for="q2n" class="block bg-white p-6 rounded-2xl border-2 border-slate-200 cursor-pointer hover:border-slate-300 transition">
+                            <label for="q2n" class="block bg-white p-6 rounded-2xl border-2 border-slate-200 cursor-pointer hover:border-slate-300 transition text-center">
                                 <span class="font-bold text-lg block">No</span>
-                                <span class="text-sm text-slate-500">AI generated content or I used no AI.</span>
                             </label>
                         </div>
                     </div>
                 </div>
                 
                 <button onclick="generateResult()" class="w-full bg-hc-blue text-white py-5 rounded-2xl text-xl font-bold hover:bg-blue-800 transition shadow-lg">
-                    Generate My Badge & Code
+                    Generate My Badge
                 </button>
             </div>
 
@@ -210,16 +163,17 @@
                     <span class="text-7xl" id="res-icon">🏆</span>
                 </div>
                 <h3 class="text-3xl font-extrabold text-hc-blue" id="res-level">Your Level: HC-Pure</h3>
-                <p class="text-blue-800 font-light max-w-xl mx-auto">Your work is certified as 100% biological. You are ready to display this commitment to your audience.</p>
+                <p id="res-desc" class="text-blue-800 font-light max-w-xl mx-auto">Your work is certified as 100% biological.</p>
                 
                 <div class="space-y-4 max-w-lg mx-auto">
-                    <a href="#" class="block w-full bg-hc-blue text-white px-6 py-3.5 rounded-xl font-semibold hover:bg-blue-800 transition">Download Badge Asset Kit</a>
+                    <a id="res-download" href="#" download class="block w-full bg-hc-blue text-white px-6 py-3.5 rounded-xl font-semibold hover:bg-blue-800 transition text-center">
+                        Download My Badge
+                    </a>
                     
                     <div class="relative code-block p-5 rounded-xl text-xs text-left">
-                        <span class="absolute top-3 right-3 text-cyan-400 font-bold">META TAG</span>
+                        <span class="absolute top-3 right-3 text-cyan-400 font-bold uppercase">Meta Tag</span>
                         <code id="res-code">&lt;meta name="creative-origin" content="HC-Pure-1.0"&gt;</code>
                     </div>
-                    <p class="text-xs text-slate-400 pt-2">Paste this code into the &lt;head&gt; section of your website for technical verification.</p>
                 </div>
             </div>
         </div>
@@ -227,68 +181,64 @@
 
     <section id="manifesto" class="py-24 px-6 bg-white">
         <div class="max-w-4xl mx-auto text-center space-y-6">
-            <div class="w-12 h-1 bg-hc-cyan mx-auto rounded-full mb-8"></div>
             <h2 class="text-4xl font-extrabold tracking-tight">The No-AI-Training Commitment</h2>
-            <p class="text-lg text-slate-600 font-light leading-relaxed max-w-2xl mx-auto">By using any Human Core standard, the author declares that they <strong class="font-bold text-hc-dark">do not authorize</strong> their work to be used as training data for Generative AI models without a specific licensing agreement and prior economic compensation. This badge acts as a reservation of rights.</p>
+            <p class="text-lg text-slate-600 font-light leading-relaxed max-w-2xl mx-auto">By using any Human Core standard, you declare that you do not authorize your work to be used for AI training without a prior agreement.</p>
             <a href="#" class="inline-block text-hc-blue font-semibold border-b-2 border-hc-cyan pb-1 text-sm hover:border-hc-blue transition">Read Full 1.0 Legal Code</a>
         </div>
     </section>
 
-    <footer class="py-16 px-6 bg-slate-100 border-t border-slate-200">
-        <div class="max-w-7xl mx-auto text-center text-slate-500 space-y-4">
-            <div class="flex items-center justify-center space-x-2 text-slate-400">
-                <div class="w-7 h-7 bg-slate-300 rounded-md flex items-center justify-center text-white font-extrabold tracking-tighter">HC</div>
-                <span class="font-bold">HUMANCORE Project</span>
-            </div>
-            <p class="text-sm font-light">Established 2026. A community standard for creative transparency.</p>
-        </div>
+    <footer class="py-16 px-6 bg-slate-100 border-t border-slate-200 text-center">
+        <p class="text-slate-400 text-sm font-light">&copy; 2026 HUMANCORE Project. A community standard for creative transparency.</p>
     </footer>
 
     <script>
-        let flags = {
-        hybrid: null, 
-        assist: null
-    };
+        let flags = { hybrid: null, assist: null };
 
-    function setStep(q, value) {
-        flags[q] = value;
-        // Oculta el resultado si cambias de opinión
-        document.getElementById('result').classList.add('hidden');
-    }
-
-    function generateResult() {
-        // Validación corregida: ahora busca 'hybrid' y 'assist'
-        if (flags.hybrid === null || flags.assist === null) {
-            alert("Please answer both questions honestly.");
-            return;
+        function setStep(q, value) {
+            flags[q] = value;
+            document.getElementById('result').classList.add('hidden');
         }
 
-        let level = "HC-Pure";
-        let icon = "🏆";
-        let desc = "Your work is certified as 100% biological. Pure human intent and execution.";
+        function generateResult() {
+            if (flags.hybrid === null || flags.assist === null) {
+                alert("Please answer both questions honestly.");
+                return;
+            }
 
-        // Lógica de decisión
-        if (flags.hybrid === true) {
-            level = "HC-Hybrid";
-            icon = "🧠";
-            desc = "Human curation with significant AI conceptual output. Transparent co-creation.";
-        } else if (flags.assist === true) {
-            level = "HC-Assist";
-            icon = "⚙️";
-            desc = "Human core creation, AI technical support. You are the creative engine.";
+            let level = "HC-Pure";
+            let icon = "🏆";
+            let fileName = "hc-pure.png";
+            let desc = "Your work is certified as 100% biological. Pure human intent and execution.";
+
+            if (flags.hybrid === true) {
+                level = "HC-Hybrid";
+                icon = "🧠";
+                fileName = "hc-hybrid.png";
+                desc = "Human curation with significant AI conceptual output. Transparent co-creation.";
+            } else if (flags.assist === true) {
+                level = "HC-Assist";
+                icon = "⚙️";
+                fileName = "hc-assist.png";
+                desc = "Human core creation, AI technical support. You are the creative engine.";
+            }
+
+            // Update Level & Icon
+            document.getElementById('res-level').innerText = "Your Level: " + level;
+            document.getElementById('res-icon').innerText = icon;
+            document.getElementById('res-desc').innerText = desc;
+            
+            // Update Code Tag
+            document.getElementById('res-code').innerText = `<meta name="creative-origin" content="${level}-1.0">`;
+            
+            // Update Dynamic Download
+            const downloadBtn = document.getElementById('res-download');
+            downloadBtn.href = "assets/" + fileName;
+            downloadBtn.download = fileName;
+
+            // Show and Scroll
+            document.getElementById('result').classList.remove('hidden');
+            document.getElementById('result').scrollIntoView({ behavior: 'smooth' });
         }
-
-        // Actualizar el DOM
-        document.getElementById('res-level').innerText = "Your Level: " + level;
-        document.getElementById('res-icon').innerText = icon;
-        document.getElementById('res-code').innerText = `<meta name="creative-origin" content="${level}-1.0">`;
-        
-        // Mostrar resultado
-        document.getElementById('result').classList.remove('hidden');
-        
-        // Scroll suave al resultado
-        document.getElementById('result').scrollIntoView({ behavior: 'smooth' });
-    }
     </script>
 </body>
 </html>
