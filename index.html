@@ -246,47 +246,49 @@
 
     <script>
         let flags = {
-            q1: null, // Did AI generate idea/core (yes=HC-Hybrid)
-            q2: null  // Did you use AI only for polish (yes=HC-Assist)
-        };
+        hybrid: null, 
+        assist: null
+    };
 
-        function setStep(q, value) {
-            flags[q] = value;
-            // Clear result if questions change
-            document.getElementById('result').classList.add('hidden');
+    function setStep(q, value) {
+        flags[q] = value;
+        // Oculta el resultado si cambias de opinión
+        document.getElementById('result').classList.add('hidden');
+    }
+
+    function generateResult() {
+        // Validación corregida: ahora busca 'hybrid' y 'assist'
+        if (flags.hybrid === null || flags.assist === null) {
+            alert("Please answer both questions honestly.");
+            return;
         }
 
-        function generateResult() {
-            // Validation
-            if (flags.q1 === null || flags.q2 === null) {
-                alert("Please answer both questions honestly.");
-                return;
-            }
+        let level = "HC-Pure";
+        let icon = "🏆";
+        let desc = "Your work is certified as 100% biological. Pure human intent and execution.";
 
-            let level = "HC-Pure";
-            let icon = "🏆";
-            let desc = "Your work is certified as 100% biological. Pure human intent and execution.";
-
-            // Logic Tree
-            if (flags.q1 === true) {
-                level = "HC-Hybrid";
-                icon = "🧠";
-                desc = "Human curation with significant AI conceptual output. Transparent co-creation.";
-            } else if (flags.q2 === true) {
-                level = "HC-Assist";
-                icon = "⚙️";
-                desc = "Human core creation, AI technical support. You are the creative engine.";
-            }
-
-            // Update DOM
-            document.getElementById('res-level').innerText = "Your Level: " + level;
-            document.getElementById('res-icon').innerText = icon;
-            document.getElementById('res-code').innerText = `<meta name="creative-origin" content="${level}-1.0">`;
-            
-            // Show result
-            document.getElementById('result').classList.remove('hidden');
-            window.location.hash = "result";
+        // Lógica de decisión
+        if (flags.hybrid === true) {
+            level = "HC-Hybrid";
+            icon = "🧠";
+            desc = "Human curation with significant AI conceptual output. Transparent co-creation.";
+        } else if (flags.assist === true) {
+            level = "HC-Assist";
+            icon = "⚙️";
+            desc = "Human core creation, AI technical support. You are the creative engine.";
         }
+
+        // Actualizar el DOM
+        document.getElementById('res-level').innerText = "Your Level: " + level;
+        document.getElementById('res-icon').innerText = icon;
+        document.getElementById('res-code').innerText = `<meta name="creative-origin" content="${level}-1.0">`;
+        
+        // Mostrar resultado
+        document.getElementById('result').classList.remove('hidden');
+        
+        // Scroll suave al resultado
+        document.getElementById('result').scrollIntoView({ behavior: 'smooth' });
+    }
     </script>
 </body>
 </html>
